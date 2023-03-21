@@ -33,7 +33,7 @@ jobs:
         id: docker_meta
         uses: docker/metadata-action@v4
         with:
-          images: bretfisher/docker-ci-automation
+          images: ghcr.io/sloths-of-yore/wordsmith-web
           flavor: |
             latest=false
           tags: |
