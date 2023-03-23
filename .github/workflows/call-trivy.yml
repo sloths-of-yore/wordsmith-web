@@ -8,3 +8,5 @@ jobs:
   scan:
     name: Scan
     uses: sloths-of-yore/actions/.github/workflows/reusable-trivy.yml@main
+    with:
+      image: 'ghcr.io/sloths-of-yore/wordsmith-web:latest'
