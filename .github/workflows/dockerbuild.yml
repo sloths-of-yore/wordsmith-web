@@ -5,7 +5,6 @@ name: 01 Basic Docker Build
 on:
   push:
     branches:
-
       - main
   pull_request:
 
@@ -44,6 +43,7 @@ jobs:
             type=ref,event=pr
             type=ref,event=branch
             type=semver,pattern={{version}}
+            type=raw,value=gha-${{ github.run_id }}
 
       - name: Docker build
         uses: docker/build-push-action@v4
